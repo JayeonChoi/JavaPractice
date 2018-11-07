@@ -40,6 +40,25 @@ public class SelectDate {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally {
+			if (rs!=null)
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			if (st != null)
+				try {
+					st.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			if (cnn != null)
+				try {
+					cnn.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
 		}
 		
 	}
