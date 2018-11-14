@@ -29,7 +29,7 @@ public class BatchTest {
 			stmt.setString(2, "Luna2");
 			stmt.setInt(3, 50);
 			stmt.setInt(4, 3000);
-			stmt.addBatch();		//sql 주지 않는게 중요
+			stmt.addBatch();		
 						
 			stmt.executeBatch();	
 			conn.commit();
